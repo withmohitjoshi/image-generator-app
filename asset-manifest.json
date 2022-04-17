@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/image-generator-app/static/css/main.1179f361.css",
-    "main.js": "/image-generator-app/static/js/main.eff63735.js",
+    "main.js": "/image-generator-app/static/js/main.1d9b799f.js",
     "index.html": "/image-generator-app/index.html",
     "main.1179f361.css.map": "/image-generator-app/static/css/main.1179f361.css.map",
-    "main.eff63735.js.map": "/image-generator-app/static/js/main.eff63735.js.map"
+    "main.1d9b799f.js.map": "/image-generator-app/static/js/main.1d9b799f.js.map"
   },
   "entrypoints": [
     "static/css/main.1179f361.css",
-    "static/js/main.eff63735.js"
+    "static/js/main.1d9b799f.js"
   ]
 }
