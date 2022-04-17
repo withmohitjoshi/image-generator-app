@@ -1,0 +1,13 @@
+.imageComponent {
+  margin: 30px;
+  text-align: center;
+}
+.imageComponent h2 {
+  text-align: center;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 75vh;
+  border-radius: 12px;
+}
