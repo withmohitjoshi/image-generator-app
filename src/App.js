@@ -12,7 +12,9 @@ function App() {
   const URL = `https://api.unsplash.com/photos/random/?client_id=${ACCESS_KEY}`;
   const [imageData, setImageData] = useState();
   const [hasError, setHasError] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const handleRequest = () => {
+    setIsLoading(true)
     axios
       .get(URL)
       .then((res) => {
@@ -20,6 +22,7 @@ function App() {
       })
       .then((val) => {
         setImageData(val);
+        setIsLoading(false)
       })
       .catch((error) => {
         setHasError(true);
@@ -34,7 +37,7 @@ function App() {
         <Header />
         {imageData !== undefined ? (
           <>
-            <ImageComponent url={imageData.urls.regular} />
+            <ImageComponent url={imageData.urls.regular} isLoading={isLoading}/>
             <div className={styles.bottomButtons}>
               <LikeCount likeCount={imageData.likes} />
               <DownloadCount downloadCount={imageData.downloads} />
